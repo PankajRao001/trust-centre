@@ -15,8 +15,10 @@
   --color-grey2: #f9f9f9;
   --color-grey3: #e6e6e6;
   --color-grey4: #bbbbbb;
+  --color-light-grey:#FDFEFF;
   --color-dark: #121212;
   --color-dark2: #484848;
+  --color-blueish:#009BF9;
 }
 @theme {
   --font-inter: "Inter", sans-serif;
@@ -50,3 +52,8 @@
   background-size: 100% 100%;
   box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.06);
 }
+.btn-compliance-docs {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255,255,255,0.001);
+}
+

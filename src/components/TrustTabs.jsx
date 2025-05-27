@@ -8,7 +8,7 @@ const TrustTabs = () => {
   return (
     <div className="bg-grey2 pt-16">
       <div className="container pt-1.5 max-w-[1260px] mx-auto px-6 ">
-        <div className="flex gap-8 items-center">
+        <div className="flex gap-[32px] items-center">
           {Tabs.map((tab, index) => (
             <button
               key={index}
