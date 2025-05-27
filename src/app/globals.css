@@ -1,26 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --text-primary: 64px;
+
+  /*-----lineheight-----*/
+  --leading-full: 100%;
+  --leading-more: 105%;
+  --leading-150: 150%;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --color-grey: #bfbfbf;
+  --color-grey2: #f9f9f9;
+  --color-grey3: #e6e6e6;
+  --color-grey4: #bbbbbb;
+  --color-dark: #121212;
+  --color-dark2: #484848;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-urbanist: "Urbanist", sans-serif;
 }
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.font-inter {
+  font-family: var(--font-inter);
+  font-style: normal;
+}
+.font-urbanist {
+  font-family: var(--font-urbanist);
+}
+@theme {
+  --text-primary: var(--text-primary);
+}
+@theme {
+  --inset-shadow-main: inset 0px -40px 0px 35px white;
+}
+@theme {
+  --leading-more: var(--leading-more);
+  --leading-150: var(--leading-150);
+  --leading-full: var(--leading-full);
+}
+.bg-control {
+  background-image: url(../assets//images/png/bg-controls.png);
+  background-size: 100% 100%;
+  box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
+}
+.bg-privacy {
+  background-image: url(../assets/images/png/bg-privacy.png);
+  background-size: 100% 100%;
+  box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.06);
 }
