@@ -5,7 +5,7 @@ import Image from "next/image";
 const Globally = () => {
   return (
     <div className="container mt-8 bg-white rounded-2xl max-w-[1260px] p-5">
-      <p className="text-dark font-semibold leading-full mb-4 font-inter text-[24px]">
+      <p className="text-dark font-semibold leading-full mb-3 font-inter text-[24px]">
         Globally Compliant Independently Verified.
       </p>
       <p className="text-dark2 max-w-[550px] font-normal leading-150 mb-4 font-inter text-[16px]">

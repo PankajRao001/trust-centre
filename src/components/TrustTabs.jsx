@@ -13,7 +13,7 @@ const TrustTabs = () => {
             <button
               key={index}
               onClick={() => setActiveIndex(index)}
-              className={`py-2 w-full gap-4 items-center justify-center max-w-[214px] rounded-full font-urbanist text-[14px] font-medium flex transition-all duration-300
+              className={`py-2 w-full gap-4 items-center cursor-pointer justify-center max-w-[214px] rounded-full font-urbanist text-[14px] font-medium flex transition-all duration-300
               ${
                 index === activeIndex
                   ? "bg-blue-500 text-white shadow"
